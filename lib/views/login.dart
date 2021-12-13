@@ -31,12 +31,12 @@ class _LoginPageState extends State<LoginPage> {
                       child: Image.asset("assets/images/dining.jpg"),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
+                      padding:const EdgeInsets.only(
                         left: 40,
                       ),
                       child: Container(
                         alignment: Alignment.topLeft,
-                        child: Text(
+                        child:const Text(
                           "Login",
                           style: TextStyle(
                             color: Colors.green,
@@ -47,12 +47,12 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                      Padding(
-                      padding: EdgeInsets.only(
+                      padding:const EdgeInsets.only(
                         left: 40,
                       ),
                       child: Container(
                         alignment: Alignment.topLeft,
-                        child: Text(
+                        child: const Text(
                           "Please sign-in to continue",
                           style: TextStyle(
                             color: Colors.blueGrey,
@@ -61,13 +61,13 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         left: 40,
                         right: 40,
                         top: 40
                       ),
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: "Email",
                           hintText: "Enter your email"
@@ -75,14 +75,14 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
+                      padding:const EdgeInsets.only(
                         left: 40,
                         right: 40,
                         top: 20,
                         bottom: 40
                       ),
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration:const InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: "Password",
                           hintText: "Enter your password"
@@ -92,7 +92,7 @@ class _LoginPageState extends State<LoginPage> {
                     InkWell(
                       onTap: () {
                         Navigator.pushReplacement(context,
-                      MaterialPageRoute(builder: (context) => HomePage()));
+                      MaterialPageRoute(builder: (context) =>const HomePage()));
                       },
                       child: Container(
                         alignment: Alignment.center,
@@ -102,7 +102,7 @@ class _LoginPageState extends State<LoginPage> {
                           color: Colors.blueGrey,
                           borderRadius: BorderRadius.circular(25)
                         ),
-                        child: Text(
+                        child:const Text(
                           "Login",
                           style: TextStyle(
                             color: Colors.white,
@@ -112,16 +112,16 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 40,
                     ),
                     InkWell(
                       onTap: () {
                         Navigator.pushReplacement(context,
-                      MaterialPageRoute(builder: (context) => RegisterPage()));
+                      MaterialPageRoute(builder: (context) =>const RegisterPage()));
                       },
                       child: RichText(
-                        text: TextSpan(
+                        text:const TextSpan(
                           style: TextStyle(
                             color: Colors.blueGrey
                           ),

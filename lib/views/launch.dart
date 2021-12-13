@@ -15,9 +15,9 @@ class _LaunchPageState extends State<LaunchPage> {
   void initState() {
     super.initState();
     Timer(
-        Duration(seconds: 3),
+        const Duration(seconds: 3),
         () => Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => LoginPage())));
+            context, MaterialPageRoute(builder: (context) =>const LoginPage())));
   }
 
   @override

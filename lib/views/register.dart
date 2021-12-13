@@ -22,7 +22,7 @@ class _RegisterPageState extends State<RegisterPage> {
               children: [
                 Column(
                   children: [
-                    CircleAvatar(
+                    const CircleAvatar(
                       backgroundColor: Colors.green,
                       radius: 80,
                       child: CircleAvatar(
@@ -35,13 +35,13 @@ class _RegisterPageState extends State<RegisterPage> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
+                      padding:const EdgeInsets.only(
                         left: 40,
                         right: 40,
                         top: 10
                       ),
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration:const InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: "Name",
                           hintText: "Enter your name"
@@ -49,13 +49,13 @@ class _RegisterPageState extends State<RegisterPage> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
+                      padding:const EdgeInsets.only(
                         left: 40,
                         right: 40,
                         top: 10
                       ),
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration:const InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: "Institute",
                           hintText: "Enter your institute  name"
@@ -63,13 +63,13 @@ class _RegisterPageState extends State<RegisterPage> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
+                      padding:const EdgeInsets.only(
                         left: 40,
                         right: 40,
                         top: 10
                       ),
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration:const InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: "Department",
                           hintText: "Enter your department name"
@@ -77,13 +77,13 @@ class _RegisterPageState extends State<RegisterPage> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
+                      padding:const EdgeInsets.only(
                         left: 40,
                         right: 40,
                         top: 10
                       ),
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration:const InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: "Phone",
                           hintText: "Enter your phone number"
@@ -91,13 +91,13 @@ class _RegisterPageState extends State<RegisterPage> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
+                      padding:const EdgeInsets.only(
                         left: 40,
                         right: 40,
                         top: 10
                       ),
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration:const InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: "photo",
                           hintText: "choose your photo"
@@ -105,13 +105,13 @@ class _RegisterPageState extends State<RegisterPage> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
+                      padding:const EdgeInsets.only(
                         left: 40,
                         right: 40,
                         top: 10
                       ),
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration:const InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: "Email",
                           hintText: "Enter your email"
@@ -119,13 +119,13 @@ class _RegisterPageState extends State<RegisterPage> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
+                      padding:const EdgeInsets.only(
                         left: 40,
                         right: 40,
                         top: 10
                       ),
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration:const InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: "Password",
                           hintText: "Enter your password"
@@ -133,14 +133,14 @@ class _RegisterPageState extends State<RegisterPage> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
+                      padding:const EdgeInsets.only(
                         left: 40,
                         right: 40,
                         top: 10,
                         bottom: 40
                       ),
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration:const InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: "Confirm password",
                           hintText: "Confirm your password"
@@ -150,7 +150,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     InkWell(
                       onTap: () {
                         Navigator.pushReplacement(context,
-                      MaterialPageRoute(builder: (context) => HomePage()));
+                      MaterialPageRoute(builder: (context) =>const HomePage()));
                       },
                       child: Container(
                         alignment: Alignment.center,
@@ -160,7 +160,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           color: Colors.blueGrey,
                           borderRadius: BorderRadius.circular(25)
                         ),
-                        child: Text(
+                        child:const Text(
                           "Register",
                           style: TextStyle(
                             color: Colors.white,
@@ -171,17 +171,17 @@ class _RegisterPageState extends State<RegisterPage> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
+                      padding:const EdgeInsets.only(
                         top: 40,
                         bottom: 50
                       ),
                       child: InkWell(
                       onTap: () {
                         Navigator.pushReplacement(context,
-                      MaterialPageRoute(builder: (context) => LoginPage()));
+                      MaterialPageRoute(builder: (context) =>const LoginPage()));
                       },
                       child: RichText(
-                        text: TextSpan(
+                        text:const TextSpan(
                           style: TextStyle(
                             color: Colors.blueGrey
                           ),

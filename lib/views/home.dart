@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/views/user.dart';
 
@@ -16,13 +14,13 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Dining Management"),
+        title: const Text("Dining Management"),
       ),
-      body: Center(
+      body: const Center(
         child: Text("null"),
       ),
       drawer: Drawer(
-        child: Container(
+        child:Container(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
           child: Column(
@@ -39,7 +37,7 @@ class _HomePageState extends State<HomePage> {
                       color: Colors.green,
                       height: 100,
                       width: MediaQuery.of(context).size.width,
-                      child: Text(
+                      child: const Text(
                         "Dining",
                         style: TextStyle(color: Colors.red, fontSize: 50),
                       ),
@@ -49,7 +47,7 @@ class _HomePageState extends State<HomePage> {
                       color: Colors.green,
                       height: 100,
                       width: MediaQuery.of(context).size.width,
-                      child: Text(
+                      child: const Text(
                         "Management",
                         style: TextStyle(color: Colors.red, fontSize: 50),
                       ),
@@ -57,7 +55,7 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
-              ListTile(
+              const ListTile(
                 leading: Icon(Icons.home),
                 title: Text("Home"),
                 trailing: Icon(Icons.arrow_forward_ios),
@@ -65,25 +63,25 @@ class _HomePageState extends State<HomePage> {
               InkWell(
                 onTap: () {
                   Navigator.pushReplacement(context,
-                      MaterialPageRoute(builder: (context) => Userpage()));
+                      MaterialPageRoute(builder: (context) =>const Userpage()));
                 },
-                child: ListTile(
+                child:const ListTile(
                   leading: Icon(Icons.people),
                   title: Text("My Account"),
                   trailing: Icon(Icons.arrow_forward_ios),
                 ),
               ),
-              ListTile(
+              const ListTile(
                 leading: Icon(Icons.home),
                 title: Text("Home"),
                 trailing: Icon(Icons.arrow_forward_ios),
               ),
-              ListTile(
+              const ListTile(
                 leading: Icon(Icons.login),
                 title: Text("Login"),
                 trailing: Icon(Icons.arrow_forward_ios),
               ),
-              ListTile(
+              const ListTile(
                 leading: Icon(Icons.app_registration),
                 title: Text("Registration"),
                 trailing: Icon(Icons.arrow_forward_ios),
